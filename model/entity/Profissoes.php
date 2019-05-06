@@ -1,6 +1,6 @@
 <?php
 
-namespace site\model\dao;
+namespace site\model\entity;
 
 use icelus\orm\model\Entity;
 use icelus\orm\type\Integer;

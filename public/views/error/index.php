@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<? $this->render("header"); ?>
+	<?php $this->render("header"); ?>
 	<body>		
 		<div class="content">	
 			
@@ -9,13 +9,13 @@
 				<div class="panel-body">
 					<ul class="list-group">
 						<li class="list-group-item">
-							<? echo $this->view["error_date"]; ?>
+							<?php echo $this->view["error_date"]; ?>
 						</li>
 						<li class="list-group-item">
-							<? echo $this->view["error_message"]; ?>
+							<?php echo $this->view["error_message"]; ?>
 						</li>					  	
 						<li class="list-group-item">
-							<? echo $this->view["error_file"] . " Linha: " . $this->view["error_line"]; ?>
+							<?php echo $this->view["error_file"] . " Linha: " . $this->view["error_line"]; ?>
 						</li>
 					</ul>
 				</div>				
