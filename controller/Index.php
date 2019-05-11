@@ -14,30 +14,27 @@ use icelus\orm\type\Strings;
 class Index extends ActionController {
 			
 	public function action($param) {
-				
-		echo "<pre>";		
+        
+        echo "aquui";
+		//echo "<pre>";		
 		//$profissoes = new Profissoes();
 
 		$sessionFactory = SessionFactory::instance()
 			->configure("/site/config.mysql")
-			->build();
+            ->build();
+        /*    
 		$sessionFactory->getSession()->begin();
 
 		$sessionFactory->getSession()->commit();
 
 		echo var_dump($sessionFactory);
 		echo var_dump($sessionFactory->getSession()->getDbc());
-		echo var_dump($sessionFactory->getSession()->getDialect());
+		echo var_dump($sessionFactory->getSession()->getDialect());*/
 		
-		//$this->view->render();
-	}	
+		//$this->view->render();*/
+    }	
 	
 	public function hasSession() {
 		
 	}
-	
-	public function hasService() {
-	
-	}
-	
 }

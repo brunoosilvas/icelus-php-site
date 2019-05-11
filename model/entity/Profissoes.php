@@ -45,7 +45,7 @@ class Profissoes extends Entity
 	}
 
 	/**
-	 * @Foreign({"name" : "perfil", "nullable" : false, "type" : "site\\model\\dao\\Perfis"})
+	 * @Foreign({"name" : "perfil", "nullable" : false, "type" : "site\\model\\entity\\Perfis"})
 	 */
 	public function getPerfis()
 	{

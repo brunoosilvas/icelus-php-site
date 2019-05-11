@@ -5,9 +5,11 @@ namespace Site\Controller;
 use Icelus\Controller\ActionController;
 use Icelus\Util\Arrays;
 
-class Error extends ActionController {
-			
-	public function action($param) {
+class Error extends ActionController 
+{
+
+	public function action($param) 
+	{
 		$this->view->add("title", "Santo Graal");
 		
 		$this->view->add("error_date", Arrays::get("error_date", $_COOKIE));
@@ -19,16 +21,19 @@ class Error extends ActionController {
 		$this->view->render();
 	}
 	
-	public function add($param) {
+	public function add($param) 
+	{
 		$this->view->add("title", "Santo Graal");
 		$this->view->render();
 	}
 	
-	public function hasSession() {
+	public function hasSession() 
+	{
 		
 	}
 	
-	public function hasService() {
+	public function hasService() 
+	{
 	
 	}
 	
