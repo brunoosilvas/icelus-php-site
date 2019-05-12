@@ -7,10 +7,4 @@
 		<password>admin</password>
 	</persistence>
 	
-	<mapping>
-		<resource class="\site\model\dao\Usuarios" />
-		<resource class="\site\model\dao\Clientes" />
-		<resource class="\site\model\dao\Profissoes" />
-	</mapping>
-	
 </config>
