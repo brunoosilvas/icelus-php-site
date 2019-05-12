@@ -2,7 +2,7 @@
 <config>
 	
 	<persistence>
-		<url>mysql:host=localhost;dbname=telemarketing;port=3306</url>
+		<url>mysql:host=localhost;dbname=examples;port=3306</url>
 		<username>root</username>
 		<password>admin</password>
 	</persistence>

@@ -3,14 +3,10 @@
 namespace site\controller;
 
 use icelus\controller\ActionController;
-use icelus\orm\SessionFactory;
 
-use site\model\dao\Profissoes;
-use site\model\dao\Usuarios;
-
-use icelus\orm\type\Integer;
-use icelus\orm\type\Strings;
-
+/**
+ * @Path("{})
+ */
 class Index extends ActionController {
 			
 	public function action($param) {
@@ -19,9 +15,9 @@ class Index extends ActionController {
 		//echo "<pre>";		
 		//$profissoes = new Profissoes();
 
-		$sessionFactory = SessionFactory::instance()
+		/*$sessionFactory = SessionFactory::instance()
 			->configure("/site/config.mysql")
-            ->build();
+            ->build();*/
         /*    
 		$sessionFactory->getSession()->begin();
 
@@ -33,6 +29,11 @@ class Index extends ActionController {
 		
 		//$this->view->render();*/
     }	
+
+    public function teste($param)
+    {
+        echo var_dump($param);
+    }
 	
 	public function hasSession() {
 		

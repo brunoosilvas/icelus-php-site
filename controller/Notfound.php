@@ -3,21 +3,22 @@
 namespace site\controller;
 
 use icelus\controller\ActionController;
-use site\model\rules\Usuarios;
 
-class Notfound extends ActionController {
+class NotFound extends ActionController {
 			
 	public function action($param) {
-		$this->view->add("title", "Santo Graal");
-		$this->view->render();
+		//$this->view->add("title", "Santo Graal");
+        //$this->view->render();
+        echo "aqui";
 	}
 	
-	public function hasSession() {
-		
-	}
-	
-	public function hasService() {
-	
-	}
-	
+	public function testeAdmin() {
+
+        echo "aqui 2";
+    }
+
+    public function hasSession()
+    {
+        
+    }
 }
