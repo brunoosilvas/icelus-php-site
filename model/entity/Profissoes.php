@@ -14,47 +14,46 @@ use site\model\dao\Perfis;
 class Profissoes extends Entity
 {
 
-	private $id;
-	private $profissao;
-	private $perfis;
+    private $id;
+    private $profissao;
+    private $perfis;
 
-	/**
-	 * @Column({"id" : true, "name" : "id", "nullable" : false, "type" : "Integer"})
-	 */
-	public function getId()
-	{
-		return $this->id;
-	}
-	
-	public function setId(\Integer $id) 
-	{
-		$this->id = $id;
-	}
+    /**
+     * @Column({"id" : true, "name" : "id", "nullable" : false, "type" : "Integer"})
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
 
-	/**
-	 * @Column({"name" : "profissao", "type" : "Strings", "nullable" : false})
-	 */
-	public function getProfissao()
-	{
-		return $this->profissao;
-	}
+    public function setId(\Integer $id)
+    {
+        $this->id = $id;
+    }
 
-	public function setProfissao(\Strings $profissao)
-	{
-		$this->profissao = $profissao;
-	}
+    /**
+     * @Column({"name" : "profissao", "type" : "Strings", "nullable" : false})
+     */
+    public function getProfissao()
+    {
+        return $this->profissao;
+    }
 
-	/**
-	 * @Foreign({"name" : "perfil", "type" : "Perfis", "nullable" : false})
-	 */
-	public function getPerfis()
-	{
-		return $this->perfis;
-	}
+    public function setProfissao(\Strings $profissao)
+    {
+        $this->profissao = $profissao;
+    }
 
-	public function setPerfis(Perfis $perfis) 
-	{
-		$this->perfis = $perfis;
-	}
-	
+    /**
+     * @Foreign({"name" : "perfil", "type" : "Perfis", "nullable" : false})
+     */
+    public function getPerfis()
+    {
+        return $this->perfis;
+    }
+
+    public function setPerfis(Perfis $perfis)
+    {
+        $this->perfis = $perfis;
+    }
 }
