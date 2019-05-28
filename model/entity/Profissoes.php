@@ -9,7 +9,7 @@ use icelus\orm\type\Strings;
 use site\model\dao\Perfis;
 
 /**
- * @Table({name : "profissoes", schema = "icelus", view = false})
+ * @Table({name : "profissoes", view = false})
  */
 class Profissoes extends Entity
 {
@@ -19,7 +19,7 @@ class Profissoes extends Entity
 	private $perfis;
 
 	/**
-	 * @Column({"id" : true, "name" : "id", "nullable" : false, "type" : "icelus\\orm\\type\\Integer"})
+	 * @Column({"id" : true, "name" : "id", "nullable" : false, "type" : "Integer"})
 	 */
 	public function getId()
 	{
@@ -32,7 +32,7 @@ class Profissoes extends Entity
 	}
 
 	/**
-	 * @Column({"name" : "profissao", "type" : "icelus\\orm\\type\\Strings", "nullable" : false})
+	 * @Column({"name" : "profissao", "type" : "Strings", "nullable" : false})
 	 */
 	public function getProfissao()
 	{
@@ -45,7 +45,7 @@ class Profissoes extends Entity
 	}
 
 	/**
-	 * @Foreign({"name" : "perfil", "nullable" : false, "type" : "site\\model\\entity\\Perfis"})
+	 * @Foreign({"name" : "perfil", "type" : "Perfis", "nullable" : false})
 	 */
 	public function getPerfis()
 	{

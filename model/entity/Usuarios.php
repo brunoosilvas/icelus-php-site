@@ -3,8 +3,8 @@
 namespace site\model\entity;
 
 use icelus\orm\model\Entity;
-use icelus\orm\type\IInteger;
-use icelus\orm\type\IString;
+use icelus\orm\type\Integer;
+use icelus\orm\type\Strings;
 
 use site\model\dao\Profissoes;
 

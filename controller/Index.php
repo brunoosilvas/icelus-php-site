@@ -3,15 +3,18 @@
 namespace site\controller;
 
 use icelus\controller\ActionController;
+use icelus\orm\type\Integer;
+use icelus\orm\type\Type;
+use site\model\entity\Profissoes;
 
-/**
- * @Path("{})
- */
 class Index extends ActionController {
 			
 	public function action($param) {
         
-        echo "aquui";
+        
+        $profissoes = new Profissoes();
+        print_r($profissoes);
+
 		//echo "<pre>";		
 		//$profissoes = new Profissoes();
 
@@ -28,7 +31,12 @@ class Index extends ActionController {
 		echo var_dump($sessionFactory->getSession()->getDialect());*/
 		
 		//$this->view->render();*/
-    }	
+    }
+    
+    private function teste2(Type $type)
+    {
+        print_r($type);
+    }
 
     public function teste($param)
     {
