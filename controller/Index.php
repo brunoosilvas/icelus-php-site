@@ -14,6 +14,7 @@ class Index extends ActionController {
         
         $profissoes = new Profissoes();
         print_r($profissoes);
+        echo var_dump($profissoes->getId());
 
 		//echo "<pre>";		
 		//$profissoes = new Profissoes();

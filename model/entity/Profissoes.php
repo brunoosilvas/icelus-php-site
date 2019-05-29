@@ -13,7 +13,6 @@ use site\model\dao\Perfis;
  */
 class Profissoes extends Entity
 {
-
     private $id;
     private $profissao;
     private $perfis;
@@ -26,7 +25,7 @@ class Profissoes extends Entity
         return $this->id;
     }
 
-    public function setId(\Integer $id)
+    public function setId(Integer $id)
     {
         $this->id = $id;
     }
@@ -39,7 +38,7 @@ class Profissoes extends Entity
         return $this->profissao;
     }
 
-    public function setProfissao(\Strings $profissao)
+    public function setProfissao(Strings $profissao)
     {
         $this->profissao = $profissao;
     }
