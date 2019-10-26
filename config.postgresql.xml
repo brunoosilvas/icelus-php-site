@@ -7,4 +7,5 @@
 		<password>admin</password>
 	</persistence>
 	
+    <dialect>icelus\orm\dialect\mysql\Mysql5</dialect>
 </config>
