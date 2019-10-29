@@ -9,7 +9,7 @@ use icelus\orm\type\Strings;
 /**
  * @Table({name : "categoria"})
  */
-class Categoria extends Entity
+class Categoria
 {
 	private $id;
     private $categoria;
@@ -42,7 +42,7 @@ class Categoria extends Entity
     }
 
     /**
-     * @Foreign({"name" : "documento", "nullable" : false, "type" : "Documento"})
+     * @Reference({"name" : "documento", "nullable" : false, "type" : "Documento"})
      */
     public function getDocumento()
     {

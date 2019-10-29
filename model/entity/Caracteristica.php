@@ -7,9 +7,9 @@ use icelus\orm\type\Integer;
 use icelus\orm\type\Strings;
 
 /**
- * @Table({name : "caracteristica"})
+ * @icelus\orm\annotation\Table {name : "caracteristica"}@
  */
-class Caracteristica extends Entity
+class Caracteristica
 {
 	private $id;
     private $caracteristica;
@@ -17,7 +17,7 @@ class Caracteristica extends Entity
     private $categoria;
 
     /**
-     * @Column({"id" : true, "name" : "id", "nullable" : false, "type" : "Integer"})
+     * @icelus\orm\annotation\Column {"id" : true, "name" : "id", "nullable" : false, "type" : "Integer"}@
      */
 	public function getId()
 	{
@@ -30,7 +30,7 @@ class Caracteristica extends Entity
     }
     
     /**
-     * @Column({"name" : "caracteristica", "nullable" : false, "type" : "Strings"})
+     * @icelus\orm\annoation\Column {"name" : "caracteristica", "nullable" : false, "type" : "Strings"}@
      */
     public function getCaracteristica()
     {
@@ -43,7 +43,7 @@ class Caracteristica extends Entity
     }
 
     /**
-     * @Column({"name" : "identificacao", "nullable" : false, "type" : "Strings"})
+     * @icelus\orm\annoation\Column {"name" : "identificacao", "nullable" : false, "type" : "Strings"}@
      */
     public function getIdentificacao()
     {
@@ -56,7 +56,7 @@ class Caracteristica extends Entity
     }
 
     /**
-     * @Foreign({"name" : "categoria", "nullable" : false, "type" : "Categoria"})
+     * @icelus\orm\annoation\Reference {"name" : "categoria", "nullable" : false, "type" : "Categoria"}@
      */
     public function getCategoria()
     {
