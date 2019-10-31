@@ -6,6 +6,8 @@ use icelus\controller\ActionController;
 use icelus\orm\mapping\Entity;
 
 use site\model\entity\Caracteristica;
+use site\model\entity\Categoria;
+use site\model\entity\Documento;
 
 class Index extends ActionController {
 			
@@ -14,6 +16,12 @@ class Index extends ActionController {
         $caracteristica = new Caracteristica();
 
         $entity = new Entity(Caracteristica::class);
+        $entity->doReader();
+
+        $entity = new Entity(Categoria::class);
+        $entity->doReader();
+
+        $entity = new Entity(Documento::class);
         $entity->doReader();
     }
     

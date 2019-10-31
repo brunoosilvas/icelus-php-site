@@ -2,21 +2,20 @@
 
 namespace site\model\entity;
 
-use icelus\orm\model\Entity;
 use icelus\orm\type\Integer;
 use icelus\orm\type\Strings;
 
 /**
- * @Table({name : "documento"})
+ * @icelus\orm\annotation\Table {name : "documento"};
  */
-class Documento extends Entity
+class Documento
 {
 	private $id;
     private $documento;
     private $versao;
 
     /**
-     * @Column({"id" : true, "name" : "id", "nullable" : false, "type" : "Integer"})
+     * @icelus\orm\annotation\Column {"id" : true, "name" : "id", "nullable" : false, "type" : "Integer"};
      */
 	public function getId()
 	{
@@ -29,7 +28,7 @@ class Documento extends Entity
     }
     
     /**
-     * @Column({"name" : "documento", "nullable" : false, "type" : "Strings"})
+     * @icelus\orm\annotation\Column {"name" : "documento", "nullable" : false, "type" : "Strings"};
      */
     public function getDocumento()
     {
@@ -42,7 +41,7 @@ class Documento extends Entity
     }
 
     /**
-     * @Column({"name" : "versao", "nullable" : false, "type" : "Strings"})
+     * @icelus\orm\annotation\Column {"name" : "versao", "nullable" : false, "type" : "Strings"};
      */
     public function getVersao()
     {
