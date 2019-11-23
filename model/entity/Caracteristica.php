@@ -29,7 +29,7 @@ class Caracteristica
     }
     
     /**
-     * @icelus\orm\annoation\Column {"name" : "caracteristica", "nullable" : false, "type" : "Strings"};
+     * @icelus\orm\annotation\Column {"name" : "caracteristica", "nullable" : false, "type" : "Strings"};
      */
     public function getCaracteristica()
     {
@@ -40,9 +40,9 @@ class Caracteristica
     {
         $this->caracteristica = $caracteristica;
     }
-
+    
     /**
-     * @icelus\orm\annoation\Column {"name" : "identificacao", "nullable" : false, "type" : "Strings"};
+     * @icelus\orm\annotation\Column {"name" : "identificacao", "nullable" : false, "type" : "Strings"};
      */
     public function getIdentificacao()
     {
