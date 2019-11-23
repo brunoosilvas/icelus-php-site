@@ -1,9 +1,9 @@
 <?php
 
-namespace site\model\entity;
+namespace Site\Model\Entity;
 
-use icelus\orm\type\Integer;
-use icelus\orm\type\Strings;
+use Icelus\Orm\Type\Integer;
+use Icelus\Orm\Type\Strings;
 
 /**
  * @icelus\orm\annotation\Table {name : "caracteristica"};
@@ -16,7 +16,7 @@ class Caracteristica
     private $categoria;
 
     /**
-     * @icelus\orm\annotation\Column {"id" : true, "name" : "id", "nullable" : false, "type" : "Integer"};
+     * @Icelus\Orm\Annotation\Column {"id" : true, "name" : "id", "nullable" : false, "type" : "Integer"};
      */
 	public function getId()
 	{
@@ -29,7 +29,7 @@ class Caracteristica
     }
     
     /**
-     * @icelus\orm\annotation\Column {"name" : "caracteristica", "nullable" : false, "type" : "Strings"};
+     * @Icelus\Orm\Annotation\Column {"name" : "caracteristica", "nullable" : false, "type" : "Strings"};
      */
     public function getCaracteristica()
     {
@@ -42,7 +42,7 @@ class Caracteristica
     }
     
     /**
-     * @icelus\orm\annotation\Column {"name" : "identificacao", "nullable" : false, "type" : "Strings"};
+     * @Icelus\Orm\Annotation\Column {"name" : "identificacao", "nullable" : false, "type" : "Strings"};
      */
     public function getIdentificacao()
     {
@@ -55,7 +55,7 @@ class Caracteristica
     }
 
     /**
-     * @icelus\orm\annotation\Reference {"name" : "categoria", "nullable" : false, "type" : "Categoria"};
+     * @Icelus\Orm\Annotation\Reference {"name" : "categoria", "nullable" : false, "type" : "Categoria"};
      */
     public function getCategoria()
     {

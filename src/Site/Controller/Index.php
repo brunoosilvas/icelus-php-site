@@ -1,13 +1,13 @@
 <?php
 
-namespace site\controller;
+namespace Site\Controller;
 
-use icelus\controller\ActionController;
-use icelus\orm\mapping\Entity;
+use Icelus\Controller\ActionController;
+use Icelus\Orm\mapping\Entity;
 
-use site\model\entity\Caracteristica;
-use site\model\entity\Categoria;
-use site\model\entity\Documento;
+use Site\Model\Entity\Caracteristica;
+use Site\Model\Entity\Categoria;
+use Site\Model\Entity\Documento;
 
 class Index extends ActionController {
 			

@@ -1,12 +1,12 @@
 <?php
 
-namespace site\model\entity;
+namespace Site\Model\Entity;
 
-use icelus\orm\type\Integer;
-use icelus\orm\type\Strings;
+use Icelus\Orm\Type\Integer;
+use Icelus\Orm\Type\Strings;
 
 /**
- * @icelus\orm\annotation\Table {name : "categoria"};
+ * @Icelus\Orm\Annotation\Table {name : "categoria"};
  */
 class Categoria
 {
@@ -15,7 +15,7 @@ class Categoria
     private $documento;
 
     /**
-     * @icelus\orm\annoation\Column {"id" : true, "name" : "id", "nullable" : false, "type" : "Integer"};
+     * @Icelus\Orm\Annoation\Column {"id" : true, "name" : "id", "nullable" : false, "type" : "Integer"};
      */
 	public function getId()
 	{
@@ -28,7 +28,7 @@ class Categoria
     }
     
     /**
-     * @icelus\orm\annoation\Column {"name" : "categoria", "nullable" : false, "type" : "Strings"};
+     * @Icelus\Orm\Annoation\Column {"name" : "categoria", "nullable" : false, "type" : "Strings"};
      */
     public function getCategoria()
     {
@@ -41,7 +41,7 @@ class Categoria
     }
 
     /**
-     * @icelus\orm\annoation\Reference {"name" : "documento", "nullable" : false, "type" : "Documento"};
+     * @Icelus\Orm\Annoation\Reference {"name" : "documento", "nullable" : false, "type" : "Documento"};
      */
     public function getDocumento()
     {
