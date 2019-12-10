@@ -13,16 +13,6 @@ class Index extends ActionController {
 			
 	public function action($param) {
         
-        $caracteristica = new Caracteristica();
-
-        $entity = new Entity(Caracteristica::class);
-        $entity->doReader();
-
-        $entity = new Entity(Categoria::class);
-        $entity->doReader();
-
-        $entity = new Entity(Documento::class);
-        $entity->doReader();
     }
     
     private function teste2(Type $type)

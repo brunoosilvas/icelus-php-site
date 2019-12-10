@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<? $this->render("header"); ?>
+	<?php $this->render("header"); ?>
 	<body>		
 		<?php phpinfo(); ?>
 	</body>
